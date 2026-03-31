@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="REadme.txt" />
+  </Folder>
+  <Project Path="ApplicationComponent/ApplicationComponent.csproj" Id="2f47cacd-76b9-4379-b010-5ac662d909dc" />
+  <Project Path="ConsoleAppItems/ConsoleAppItems.csproj" Id="b92031a3-a90e-4988-aef9-793947529e10" />
+  <Project Path="Domain/DomainComponent.csproj" />
+  <Project Path="Infrastructure.Component/Infrastructure.Repository.csproj" Id="aac6ed9f-c626-424e-8d37-b8e5e7f70528" />
+</Solution>
