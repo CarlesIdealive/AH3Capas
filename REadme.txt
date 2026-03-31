@@ -19,3 +19,9 @@
 #	'ItemRepository' es la implementacion concreta del puerto de salida 'IRepository' del proyecto DOMINIO
 #	Tambien tenemos la implementacion del Adaptador Primario
 #	Adaptador Primario: ItemService (Implementa el puerto de entrada 'IService' del proyecto APLICACION)
+
+#Proyecto CONSOLA
+#Descripcion:
+#	Este proyecto es una aplicación de consola que consume el servicio 'ItemService' para realizar operaciones CRUD sobre los 'Items'.
+#	En el ItemService se inyecta (DI) el repositorio 'ItemRepository' como implementación concreta del puerto de salida 'IRepository' del proyecto DOMINIO.
+
