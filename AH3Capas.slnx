@@ -7,4 +7,5 @@
   <Project Path="ConsoleAppItems/ConsoleAppItems.csproj" Id="b92031a3-a90e-4988-aef9-793947529e10" />
   <Project Path="Domain/DomainComponent.csproj" />
   <Project Path="Infrastructure.Component/Infrastructure.Repository.csproj" Id="aac6ed9f-c626-424e-8d37-b8e5e7f70528" />
+  <Project Path="MapperComponent/MapperComponent.csproj" Id="c1e4138a-a48d-4e42-9504-a8afa18e7d4c" />
 </Solution>

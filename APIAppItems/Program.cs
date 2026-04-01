@@ -1,8 +1,12 @@
 using ApplicationComponent;
+using ApplicationComponent.DTOs;
+using ApplicationComponent.Mapper;
 using Domain.Interfaces;
 using DomainComponent.Entities;
 using DomainComponent.Interfaces;
 using Infrastructure.Repository;
+using Infrastructure.Repository.Models;
+using MapperComponent;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +21,11 @@ builder.Services.AddTransient<IRepository, ItemRepository>();
 builder.Services.AddTransient<ICommonRepository<Note>, NoteRepository>();
 builder.Services.AddTransient<IService, ItemService>();
 builder.Services.AddTransient<ICommonService<Note>, NoteService>();
-
+//Mapper en Application
+builder.Services.AddTransient<IAddRepository<NoteModel>, NoteMapperRepository>();
+builder.Services.AddTransient<IMapper<NoteDTO, Note>, NoteEntityMapper>();
+builder.Services.AddTransient<IMapper<NoteDTO, NoteModel>, NoteModelMapper>();
+builder.Services.AddTransient<IAddService<NoteDTO, NoteModel>, NoteMapperService<NoteDTO, NoteModel>>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
